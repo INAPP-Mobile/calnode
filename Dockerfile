@@ -15,7 +15,7 @@
 #   - a /healthz HEALTHCHECK using busybox wget (no curl in this base image),
 #   - EXPOSE 3000 (matches the app's default PORT).
 # ============================================================================
-ARG CALNODE_TAG=latest
+ARG CALNODE_TAG=0.14.0
 FROM ghcr.io/calnode/calnode:${CALNODE_TAG}
 
 # SQLite data dir for the Railway volume (calnode-data).
